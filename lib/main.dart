@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/utilis/theme.dart';
 import 'package:islami/features/home/presentation/views/home_view.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: HomeView.routeName,
       routes: {HomeView.routeName: (context) => const HomeView()},
+      theme: AppTheme.lightTheme,
     );
   }
 }
