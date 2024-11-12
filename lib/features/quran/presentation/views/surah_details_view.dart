@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami/features/quran/presentation/views/widgets/details_view_body.dart';
+import 'package:islami/features/quran/presentation/views/widgets/surah_details_view_body.dart';
 import 'package:islami/features/quran/presentation/views/widgets/surah_name_item.dart';
 
 class SurahDetailsView extends StatelessWidget {

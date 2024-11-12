@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/core/utilis/app_routes.dart';
 import 'package:islami/core/utilis/theme.dart';
-import 'package:islami/features/quran/presentation/views/details_view.dart';
+import 'package:islami/features/quran/presentation/views/surah_details_view.dart';
 import 'package:islami/features/home/presentation/views/home_view.dart';
 
 void main() {
