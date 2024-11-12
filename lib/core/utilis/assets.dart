@@ -4,6 +4,7 @@ class AssetsData {
    static  const iconHadeth = "assets/images/icon_hadeth.png";
    static  const iconSebha = "assets/images/icon_sebha.png";
    static  const iconRadio = "assets/images/icon_radio.png";
+    static  const quranLogo = "assets/images/qur2an_screen_logo.png";
 
 
 

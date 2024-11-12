@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/utilis/app_routes.dart';
 import 'package:islami/core/utilis/theme.dart';
+import 'package:islami/features/quran/presentation/views/details_view.dart';
 import 'package:islami/features/home/presentation/views/home_view.dart';
 
 void main() {
@@ -13,8 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeView.routeName,
-      routes: {HomeView.routeName: (context) => const HomeView()},
+      initialRoute: AppRoutes.homeRouteName,
+      routes: {
+        AppRoutes.homeRouteName: (context) => const HomeView(),
+        AppRoutes.detailsRouteName: (context) => const SurahDetailsView(),
+      },
       theme: AppTheme.lightTheme,
     );
   }
