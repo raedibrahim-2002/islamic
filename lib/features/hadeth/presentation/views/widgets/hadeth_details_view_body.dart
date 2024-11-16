@@ -5,12 +5,12 @@ import 'package:islami/features/hadeth/presentation/views/widgets/hadeth_item.da
 import 'package:islami/features/hadeth/presentation/views/widgets/hadeth_view_body.dart';
 
 class HadethDetailsViewBody extends StatelessWidget {
-  HadethDetailsViewBody({
+const  HadethDetailsViewBody({
     super.key,
     required this.hadethData,
   });
 
-  HadethData hadethData;
+ final HadethData hadethData;
 
   @override
   Widget build(BuildContext context) {

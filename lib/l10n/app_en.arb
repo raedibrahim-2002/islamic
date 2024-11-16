@@ -1,0 +1,10 @@
+{
+    "app_name" : "Islami",
+    "quran" :"Quran",
+    "hadeth" : "Hadeth",
+    "sebha" : "Sebha",
+    "radio"  : "Radio",
+    "surah_name" :"Sura Name",
+    "hadeth_name" :"Hadeth Name"
+    
+}

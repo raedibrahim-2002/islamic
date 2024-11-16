@@ -5,7 +5,7 @@ import 'package:islami/features/hadeth/presentation/views/hadeth_view.dart';
 import 'package:islami/features/home/presentation/views/widgets/custom_bottom_navigation_bar_Item.dart';
 import 'package:islami/features/quran/presentation/views/quran_view.dart';
 import 'package:islami/features/radio/presentation/views/radio.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
 
@@ -29,7 +29,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
         Scaffold(
           appBar: AppBar(
             title: Text(
-              "Islamic",
+              AppLocalizations.of(context)!.app_name,
               style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
@@ -45,16 +45,16 @@ class _HomeViewBodyState extends State<HomeViewBody> {
               items: [
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconQuran,
-                    labelName: "Quran"),
+                    labelName: AppLocalizations.of(context)!.quran),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconHadeth,
-                    labelName: "Hadeth"),
+                    labelName:  AppLocalizations.of(context)!.hadeth),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconSebha,
-                    labelName: "Sebha"),
+                    labelName:  AppLocalizations.of(context)!.sebha),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconRadio,
-                    labelName: "Radio"),
+                    labelName:  AppLocalizations.of(context)!.radio),
               ],
             ),
           ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:islami/core/utilis/app_routes.dart';
 import 'package:islami/core/utilis/assets.dart';
 import 'package:islami/core/utilis/widgets/customDivider.dart';
 import 'package:islami/features/quran/data/surah_names.dart';
 import 'package:islami/features/quran/presentation/views/widgets/surah_name_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranViewBody extends StatelessWidget {
   const QuranViewBody({super.key});
@@ -18,7 +18,7 @@ class QuranViewBody extends StatelessWidget {
             divideValue: 3,
           ),
           Text(
-            "Sura Name",
+            AppLocalizations.of(context)!.surah_name,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           const CustomDivider(divideValue: 3),

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:islami/core/utilis/assets.dart';
 import 'package:islami/core/utilis/widgets/customDivider.dart';
 import 'package:islami/features/hadeth/presentation/views/widgets/hadeth_name_item.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HadethViewBody extends StatefulWidget {
   const HadethViewBody({super.key});
@@ -27,7 +28,7 @@ class _HadethViewBodyState extends State<HadethViewBody> {
             divideValue: 3,
           ),
           Text(
-            "Hadeth Name",
+            AppLocalizations.of(context)!.hadeth_name,
             style: Theme.of(context).textTheme.titleMedium,
           ),
           const CustomDivider(divideValue: 3),
