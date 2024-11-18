@@ -6,6 +6,8 @@ import 'package:islami/features/home/presentation/views/widgets/custom_bottom_na
 import 'package:islami/features/quran/presentation/views/quran_view.dart';
 import 'package:islami/features/radio/presentation/views/radio.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/features/settings/presentation/views/setting_view.dart';
+
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
 
@@ -48,13 +50,16 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                     labelName: AppLocalizations.of(context)!.quran),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconHadeth,
-                    labelName:  AppLocalizations.of(context)!.hadeth),
+                    labelName: AppLocalizations.of(context)!.hadeth),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconSebha,
-                    labelName:  AppLocalizations.of(context)!.sebha),
+                    labelName: AppLocalizations.of(context)!.sebha),
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconRadio,
-                    labelName:  AppLocalizations.of(context)!.radio),
+                    labelName: AppLocalizations.of(context)!.radio),
+                BottomNavigationBarItem(
+                    icon: const Icon(Icons.settings),
+                    label: AppLocalizations.of(context)!.settings)
               ],
             ),
           ),
@@ -68,6 +73,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
     const QuranView(),
     const Hadethview(),
     const SebhaView(),
-    const RadioView()
+    const RadioView(),
+    const SettingView()
   ];
 }
