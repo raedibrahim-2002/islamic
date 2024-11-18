@@ -6,7 +6,9 @@ import 'package:islami/features/home/presentation/views/widgets/custom_bottom_na
 import 'package:islami/features/quran/presentation/views/quran_view.dart';
 import 'package:islami/features/radio/presentation/views/radio.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/features/settings/presentation/manager/providers/app_config_prov.dart';
 import 'package:islami/features/settings/presentation/views/setting_view.dart';
+import 'package:provider/provider.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -20,14 +22,22 @@ class _HomeViewBodyState extends State<HomeViewBody> {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<AppConfigProvider>(context);
     return Stack(
       children: [
-        Image.asset(
-          AssetsData.homeBackground,
-          width: double.infinity,
-          height: double.infinity,
-          fit: BoxFit.fill,
-        ),
+        provider.isDark()
+            ? Image.asset(
+                AssetsData.homeBackgroundDark,
+                width: double.infinity,
+                height: double.infinity,
+                fit: BoxFit.fill,
+              )
+            : Image.asset(
+                AssetsData.homeBackground,
+                width: double.infinity,
+                height: double.infinity,
+                fit: BoxFit.fill,
+              ),
         Scaffold(
           appBar: AppBar(
             title: Text(

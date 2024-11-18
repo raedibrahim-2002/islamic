@@ -32,6 +32,8 @@ class MyApp extends StatelessWidget {
       },
       theme: AppTheme.lightTheme,
       locale: Locale(provider.appLanguage),
+      themeMode: provider.appThemeMode,
+      darkTheme: AppTheme.darkTheme,
     );
   }
 }

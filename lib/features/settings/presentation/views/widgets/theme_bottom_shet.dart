@@ -4,8 +4,8 @@ import 'package:islami/core/utilis/theme.dart';
 import 'package:islami/features/settings/presentation/manager/providers/app_config_prov.dart';
 import 'package:provider/provider.dart';
 
-class LanguageBottomShet extends StatelessWidget {
-  const LanguageBottomShet({super.key});
+class ThemeBottomShet extends StatelessWidget {
+  const ThemeBottomShet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,24 +14,24 @@ class LanguageBottomShet extends StatelessWidget {
       children: [
         InkWell(
             onTap: () {
-              provider.changelanguage("en");
+              provider.changeTheme(ThemeMode.dark);
               Navigator.pop(context);
             },
-            child: provider.appLanguage == "en"
+            child: provider.isDark()
                 ? getSelectedItemWidget(
-                    context, AppLocalizations.of(context)!.english)
+                    context, AppLocalizations.of(context)!.dark)
                 : getUnSelectedItemWidget(
-                    context, AppLocalizations.of(context)!.english)),
+                    context, AppLocalizations.of(context)!.dark)),
         InkWell(
           onTap: () {
-            provider.changelanguage("ar");
+            provider.changeTheme(ThemeMode.light);
             Navigator.pop(context);
           },
-          child: provider.appLanguage == "ar"
+          child: !provider.isDark()
               ? getSelectedItemWidget(
-                  context, AppLocalizations.of(context)!.arabic)
+                  context, AppLocalizations.of(context)!.light)
               : getUnSelectedItemWidget(
-                  context, AppLocalizations.of(context)!.arabic),
+                  context, AppLocalizations.of(context)!.light),
         ),
       ],
     );
