@@ -12,6 +12,9 @@
     "light":"مضئ",
     "dark":"ليلي",
     "theme":"النمط",
-    "language" : "اللغة"
+    "language" : "اللغة",
+    "number_of_praises" : "عدد التسبيحات",
+    "remember_allah" : "أذكر الله"
+
     
 }

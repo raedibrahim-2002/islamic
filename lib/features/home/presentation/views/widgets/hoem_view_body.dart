@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/core/utilis/assets.dart';
-import 'package:islami/features/Sebha/presentation/views/sebha.dart';
+import 'package:islami/features/Sebha/presentation/views/sebha_view.dart';
 import 'package:islami/features/hadeth/presentation/views/hadeth_view.dart';
 import 'package:islami/features/home/presentation/views/widgets/custom_bottom_navigation_bar_Item.dart';
 import 'package:islami/features/quran/presentation/views/quran_view.dart';

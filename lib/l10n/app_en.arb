@@ -12,8 +12,9 @@
     "light":"Light",
     "dark":"Dark",
     "theme":"Theme",
-    "language" : "Language"
-
+    "language" : "Language",
+    "number_of_praises" : "Number of praises",
+    "remember_allah" : "Remember Allah"
 
     
 }

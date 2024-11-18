@@ -17,11 +17,6 @@ class HadethViewBody extends StatefulWidget {
 
 class _HadethViewBodyState extends State<HadethViewBody> {
   List<HadethData> verses = [];
-  @override
-  void initState() {
-    loadAhadethFile();
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

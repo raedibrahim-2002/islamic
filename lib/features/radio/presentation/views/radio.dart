@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/features/radio/presentation/views/widgets/radio_view_body.dart';
 
 class RadioView
  extends StatelessWidget {
@@ -7,6 +8,6 @@ class RadioView
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const RadioViewBody();
   }
 }

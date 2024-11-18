@@ -3,6 +3,8 @@ class AssetsData {
   static const homeBackgroundDark = "assets/images/dark_bg.png";
   static const sebhaLogo = "assets/images/body_sebha_logo.png";
   static const sebhaLogoDark = "assets/images/body_sebha_dark.png";
+  static const headSebhaLogo = "assets/images/head_sebha_logo.png";
+  static const headSebhaLogoDark = "assets/images/head_sebha_dark.png";
   static const radioLogo = "assets/images/radio_image.png";
   static const iconQuran = "assets/images/icon_quran.png";
   static const iconHadeth = "assets/images/icon_hadeth.png";
