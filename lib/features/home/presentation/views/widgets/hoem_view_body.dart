@@ -64,9 +64,9 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                 customBottomNavigationBarItem(
                     iconBottomImageName: AssetsData.iconSebha,
                     labelName: AppLocalizations.of(context)!.sebha),
-                customBottomNavigationBarItem(
-                    iconBottomImageName: AssetsData.iconRadio,
-                    labelName: AppLocalizations.of(context)!.radio),
+                // customBottomNavigationBarItem(
+                //     iconBottomImageName: AssetsData.iconRadio,
+                //     labelName: AppLocalizations.of(context)!.radio),
                 BottomNavigationBarItem(
                     icon: const Icon(Icons.settings),
                     label: AppLocalizations.of(context)!.settings)
@@ -83,7 +83,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
     const QuranView(),
     const Hadethview(),
     const SebhaView(),
-    const RadioView(),
+    // const RadioView(),
     const SettingView()
   ];
 }

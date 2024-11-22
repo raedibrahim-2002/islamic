@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami/features/settings/presentation/manager/providers/app_config_prov.dart';
-import 'package:islami/features/settings/presentation/views/widgets/language_bottom_shet.dart';
-import 'package:islami/features/settings/presentation/views/widgets/theme_bottom_shet.dart';
+import 'package:islami/features/settings/presentation/views/widgets/app_language_inkwell.dart';
+import 'package:islami/features/settings/presentation/views/widgets/app_theme_inkwell.dart';
 import 'package:provider/provider.dart';
 
 class SettingViewBody extends StatelessWidget {
@@ -34,72 +34,11 @@ class SettingViewBody extends StatelessWidget {
           const SizedBox(
             height: 15,
           ),
-          InkWell(
-            onTap: () => showThemeBottomShet(context),
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor,
-                  borderRadius: BorderRadius.circular(50)),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      provider.appThemeMode == ThemeMode.dark
-                          ? AppLocalizations.of(context)!.dark
-                          : AppLocalizations.of(context)!.light,
-                      style: Theme.of(context).textTheme.titleSmall,
-                    ),
-                    const Icon(Icons.arrow_drop_down_rounded)
-                  ],
-                ),
-              ),
-            ),
-          ),
+          appThemeInkwell(context, provider),
         ],
       ),
     );
   }
 
-  InkWell AppLanguageInkwell(BuildContext context, AppConfigProvider provider) {
-    return InkWell(
-      onTap: () => showLanguageBottomShet(context),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
-          borderRadius: BorderRadius.circular(50),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                provider.appLanguage == "en"
-                    ? AppLocalizations.of(context)!.english
-                    : AppLocalizations.of(context)!.arabic,
-                style: Theme.of(context).textTheme.titleSmall,
-              ),
-              const Icon(Icons.arrow_drop_down_rounded)
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 
-  void showLanguageBottomShet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      builder: (context) => LanguageBottomShet(),
-    );
-  }
-
-  void showThemeBottomShet(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      builder: (context) => const ThemeBottomShet(),
-    );
-  }
 }
