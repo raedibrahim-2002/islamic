@@ -10,11 +10,14 @@ class AyaItem extends StatelessWidget {
   final int index;
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "$ayatext(${index + 1})",
-      textDirection: TextDirection.rtl,
-      style: Theme.of(context).textTheme.titleSmall,
-      textAlign: TextAlign.center,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        "$ayatext(${index + 1})",
+        textDirection: TextDirection.rtl,
+        style: Theme.of(context).textTheme.titleSmall,
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }

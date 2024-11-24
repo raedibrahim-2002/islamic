@@ -36,7 +36,7 @@ class _SurahDetailsViewBodyState extends State<SurahDetailsViewBody> {
               fit: BoxFit.fill,
             )
           : Image.asset(
-              AssetsData.homeBackgroundDark,
+              AssetsData.homeBackground,
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.fill,

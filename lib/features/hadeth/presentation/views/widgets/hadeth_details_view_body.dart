@@ -27,7 +27,7 @@ class HadethDetailsViewBody extends StatelessWidget {
               fit: BoxFit.fill,
             )
           : Image.asset(
-              AssetsData.homeBackgroundDark,
+              AssetsData.homeBackground,
               width: double.infinity,
               height: double.infinity,
               fit: BoxFit.fill,
@@ -51,7 +51,8 @@ class HadethDetailsViewBody extends StatelessWidget {
           child: ListView.builder(
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
                 child: HadethItem(hadethData: hadethData.content[index]),
               );
             },

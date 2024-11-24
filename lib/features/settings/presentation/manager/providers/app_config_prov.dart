@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppConfigProvider extends ChangeNotifier {
-  String appLanguage = "en";
-  ThemeMode appThemeMode = ThemeMode.dark;
+  String appLanguage = "ar";
+  ThemeMode appThemeMode = ThemeMode.light;
 
   void changelanguage(String newLanguage) {
     if (appLanguage == newLanguage) {
